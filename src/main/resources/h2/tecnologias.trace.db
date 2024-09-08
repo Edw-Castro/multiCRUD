@@ -1,0 +1,36 @@
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAIS" not found (this database is empty); SQL statement:
+INSERT INTO pais (id, nombre) VALUES (?, ?) [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAIS" not found (this database is empty); SQL statement:
+UPDATE pais SET nombre = ? WHERE id = ? [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPARTAMENTO" not found (this database is empty); SQL statement:
+INSERT INTO departamento (id, nombre, pais_id) VALUES (?, ?, ?) [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPARTAMENTO" not found (this database is empty); SQL statement:
+SELECT d.id, d.nombre, p.id AS pais_id, p.nombre AS pais_nombre FROM departamento d JOIN pais p ON d.pais_id = p.id WHERE d.id = ? [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPARTAMENTO" not found (this database is empty); SQL statement:
+UPDATE departamento SET nombre = ?, pais_id = ? WHERE id = ? [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPARTAMENTO" not found (this database is empty); SQL statement:
+SELECT d.id, d.nombre, p.id AS pais_id, p.nombre AS pais_nombre FROM departamento d JOIN pais p ON d.pais_id = p.id WHERE d.id = ? [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPARTAMENTO" not found (this database is empty); SQL statement:
+DELETE FROM departamento WHERE id = ? [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MUNICIPIO" not found (this database is empty); SQL statement:
+INSERT INTO municipio (id, nombre, departamento_id) VALUES (?, ?, ?) [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MUNICIPIO" not found (this database is empty); SQL statement:
+SELECT m.id AS municipio_id, m.nombre AS municipio_nombre, d.id AS departamento_id, d.nombre AS departamento_nombre, p.id AS pais_id, p.nombre AS pais_nombre FROM municipio m JOIN departamento d ON m.departamento_id = d.id JOIN pais p ON d.pais_id = p.id WHERE m.id = ? [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MUNICIPIO" not found (this database is empty); SQL statement:
+UPDATE municipio SET nombre = ?, departamento_id = ? WHERE id = ? [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MUNICIPIO" not found (this database is empty); SQL statement:
+DELETE FROM municipio WHERE id = ? [42104-220]
+2024-09-03 00:54:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DIRECCION" not found (this database is empty); SQL statement:
+INSERT INTO direccion (id, municipio_id, departamento_id, pais_id, calle, carrera, coordenada, descripcion) VALUES (?, ?, ?, ?, ?, ?, ?, ?) [42104-220]
