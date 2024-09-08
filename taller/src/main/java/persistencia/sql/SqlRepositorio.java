@@ -1,7 +1,6 @@
 package persistencia.sql;
 
 import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
 import java.sql.ResultSet;
 import repositorio.ConexionBaseDatos;
 import repositorio.DatosRepositorio;
@@ -12,6 +11,7 @@ import java.sql.SQLException;
 import fabricas.CrudRepositorioFabrica;
 import fabricas.SqlRepositorioFabrica;
 import infraestructura.baseDeDatos.Conexion;
+import persistencia.funcionesAuxiliares.FuncionesAuxiliares;
 
 public class SqlRepositorio<T> implements DatosRepositorio<T> {
 
@@ -34,7 +34,7 @@ public class SqlRepositorio<T> implements DatosRepositorio<T> {
             try {
                 Object valor = campo.get(objeto);
                 if (valor != null) {
-                    valor = obtenerValorCampo(valor);
+                    valor = FuncionesAuxiliares.obtenerValorIdObjeto(valor);
                     campos.append(campo.getName()).append(", ");
                     valores.append("'").append(valor.toString()).append("', ");
                 }
@@ -43,12 +43,12 @@ public class SqlRepositorio<T> implements DatosRepositorio<T> {
             }
         }
 
-        ajustarLongitudDeStrings(campos);
-        ajustarLongitudDeStrings(valores);
+        FuncionesAuxiliares.ajustarLongitudDeStrings(campos);
+        FuncionesAuxiliares.ajustarLongitudDeStrings(valores);
 
         String sql = "INSERT INTO " + tabla + " (" + campos.toString() + ") VALUES (" + valores.toString() + ")";
 
-        ejecutarSentenciaSQL(sql);
+        FuncionesAuxiliares.ejecutarSentenciaSQL(sql, db);
     }
 
     @Override
@@ -91,9 +91,8 @@ public class SqlRepositorio<T> implements DatosRepositorio<T> {
             }
         } catch (SQLException e) {
             System.err.println("Error al ejecutar la consulta: " + e.getMessage());
-        } catch (InstantiationException | IllegalAccessException | NoSuchMethodException
-                | InvocationTargetException e) {
-            e.printStackTrace(); // Manejamos cualquier otra excepción
+        } catch (Exception e) {
+            System.out.println("El error es: " + e);
         }
 
         return null;
@@ -113,14 +112,14 @@ public class SqlRepositorio<T> implements DatosRepositorio<T> {
                     // Si el campo es un objeto y no un tipo primitivo ni un String
                     if (!campo.getType().isPrimitive() && !(valor instanceof String)) {
                         // Obtener el valor de ID del objeto si existe
-                        if (tieneMetodoGetId(valor)) {
+                        if (FuncionesAuxiliares.tieneMetodoGetId(valor)) {
                             valor = valor.getClass().getMethod("getId").invoke(valor);
                         }
                     }
                     valores.append(campo.getName()).append(" = '").append(valor.toString()).append("', ");
                 }
-            } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
-                e.printStackTrace();
+            } catch (Exception e) {
+                System.out.println("El error es: " + e);
             }
         }
 
@@ -154,45 +153,6 @@ public class SqlRepositorio<T> implements DatosRepositorio<T> {
             System.out.println("Objeto eliminado exitosamente.");
         } catch (SQLException e) {
             System.out.println("Error al eliminar el objeto: " + e.getMessage());
-        }
-    }
-
-    private Object obtenerValorCampo(Object valor) {
-        // Evitar invocar métodos en tipos que no tienen getId
-        if (!valor.getClass().isPrimitive() && !(valor instanceof String) && tieneMetodoGetId(valor)) {
-            try {
-                return valor.getClass().getMethod("getId").invoke(valor);
-            } catch (NoSuchMethodException e) {
-                System.err.println("Método getId no encontrado: " + e.getMessage());
-            } catch (InvocationTargetException | IllegalAccessException e) {
-                System.err.println("Error al invocar el método getId: " + e.getMessage());
-            }
-        }
-        return valor;
-    }
-
-    // Método para verificar si la clase tiene el método getId
-    public boolean tieneMetodoGetId(Object valor) {
-        try {
-            valor.getClass().getMethod("getId");
-            return true;
-        } catch (NoSuchMethodException e) {
-            return false;
-        }
-    }
-
-    public void ajustarLongitudDeStrings(StringBuilder sb) {
-        if (sb.length() > 0) {
-            sb.setLength(sb.length() - 2);
-        }
-    }
-
-    public void ejecutarSentenciaSQL(String sql) {
-        try (PreparedStatement pstmt = db.prepareStatement(sql)) {
-            pstmt.executeUpdate();
-            System.out.println("Objeto agregado exitosamente.");
-        } catch (SQLException e) {
-            System.err.println("Error al agregar el objeto: " + e.getMessage());
         }
     }
 

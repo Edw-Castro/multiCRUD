@@ -4,6 +4,9 @@ public class Cargo implements Todos {
     private int id;
     private String nombre;
 
+    public Cargo() {
+    }
+
     public Cargo(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;
@@ -32,6 +35,6 @@ public class Cargo implements Todos {
 
     @Override
     public String toString() {
-        return informacion();
+        return "Cargo [id=" + id + ", nombre=" + nombre + "]";
     }
 }

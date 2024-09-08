@@ -10,6 +10,9 @@ public class Direccion {
     private Departamento departamento;
     private Pais pais;
 
+    public Direccion() {
+    }
+
     public Direccion(int id, String calle, String carrera, String coordenada, String descripcion, Municipio municipio,
             Departamento departamento, Pais pais) {
         this.id = id;

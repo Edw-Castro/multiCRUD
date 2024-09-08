@@ -6,6 +6,9 @@ public class Persona implements Todos {
     private String apellido;
     private Direccion direccion;
 
+    public Persona() {
+    }
+
     public Persona(int id, String nombre, String apellido, Direccion direccion) {
         this.id = id;
         this.nombre = nombre;

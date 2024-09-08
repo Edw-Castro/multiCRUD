@@ -6,7 +6,7 @@ public interface DatosRepositorio<T> {
 
     public T leerObjeto(int id);
 
-    public void actualizarObjeto(T objeto, String id);
+    public void actualizarObjeto(T objeto, String i);
 
     public void eliminarObjeto(String id);
 }

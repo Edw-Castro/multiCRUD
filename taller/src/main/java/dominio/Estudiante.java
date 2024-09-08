@@ -5,6 +5,9 @@ public class Estudiante extends Persona {
     private String programa;
     private Double promedio;
 
+    Estudiante() {
+    }
+
     public Estudiante(int id, String nombres, String apellidos, Direccion direccion, String codigo, String programa,
             Double promedio) {
         super(id, nombres, apellidos, direccion);

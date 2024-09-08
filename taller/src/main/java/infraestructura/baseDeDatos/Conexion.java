@@ -9,22 +9,8 @@ import utilsTaller.Constantes;
 public final class Conexion implements ConexionBaseDatos {
     private static Connection database;
 
-    // public static Connection getDatabase() {
-    // if (database == null) {
-    // try {
-    // Class.forName("org.h2.Driver");
-    // database = DriverManager
-    // .getConnection(Constantes.urlBD, Constantes.usuarioBD, "");
-
-    // } catch (Exception e) {
-    // System.out.println("Error: " + e);
-    // }
-    // }
-
-    // return database;
-    // }
-
     @Override
+    // asegurando el tener una única instancia
     public Connection obtenerBaseDatos() {
         if (database == null) {
             try {

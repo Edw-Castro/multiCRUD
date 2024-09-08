@@ -5,6 +5,9 @@ public class Departamento {
     private String nombreDepartamento;
     private Pais pais;
 
+    public Departamento() {
+    };
+
     public Departamento(int idDepartamento, String nombreDepartamento, Pais pais) {
         this.idDepartamento = idDepartamento;
         this.nombreDepartamento = nombreDepartamento;

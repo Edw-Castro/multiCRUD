@@ -5,6 +5,9 @@ public class Municipio {
     private String nombreMunicipio;
     private Departamento departamento;
 
+    public Municipio() {
+    }
+
     public Municipio(int idMunicipio, String nombreMunicipio, Departamento departamento) {
         this.idMunicipio = idMunicipio;
         this.nombreMunicipio = nombreMunicipio;

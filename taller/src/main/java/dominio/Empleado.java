@@ -6,6 +6,9 @@ public class Empleado extends Persona implements Serializable {
     private Cargo cargo;
     private double salario;
 
+    Empleado() {
+    }
+
     // Constructor con todos los atributos necesarios
     public Empleado(int id, String nombres, String apellidos, Direccion direccion, Cargo cargo, double salario) {
         super(id, nombres, apellidos, direccion);
