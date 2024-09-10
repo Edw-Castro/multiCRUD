@@ -1,11 +1,11 @@
 package dominio;
 
 public class Direccion {
-    private int id;
-    private String calle;
-    private String carrera;
-    private String coordenada;
-    private String descripcion;
+    private int iddireccion;
+    private String calledireccion;
+    private String carreradireccion;
+    private String coordenadadireccion;
+    private String descripciondireccion;
     private Municipio municipio;
     private Departamento departamento;
     private Pais pais;
@@ -13,13 +13,14 @@ public class Direccion {
     public Direccion() {
     }
 
-    public Direccion(int id, String calle, String carrera, String coordenada, String descripcion, Municipio municipio,
+    public Direccion(int id, String calle, String carrera, String coordenadadireccion, String descripciondireccion,
+            Municipio municipio,
             Departamento departamento, Pais pais) {
-        this.id = id;
-        this.calle = calle;
-        this.carrera = carrera;
-        this.coordenada = coordenada;
-        this.descripcion = descripcion;
+        this.iddireccion = id;
+        this.calledireccion = calle;
+        this.carreradireccion = carrera;
+        this.coordenadadireccion = coordenadadireccion;
+        this.descripciondireccion = descripciondireccion;
         this.municipio = municipio;
         this.departamento = departamento;
         this.pais = pais;
@@ -27,43 +28,43 @@ public class Direccion {
 
     // Getters y Setters
     public int getId() {
-        return id;
+        return iddireccion;
     }
 
     public void setId(int id) {
-        this.id = id;
+        this.iddireccion = id;
     }
 
     public String getCalle() {
-        return calle;
+        return calledireccion;
     }
 
     public void setCalle(String calle) {
-        this.calle = calle;
+        this.calledireccion = calle;
     }
 
     public String getCarrera() {
-        return carrera;
+        return carreradireccion;
     }
 
     public void setCarrera(String carrera) {
-        this.carrera = carrera;
+        this.carreradireccion = carrera;
     }
 
     public String getCoordenada() {
-        return coordenada;
+        return coordenadadireccion;
     }
 
-    public void setCoordenada(String coordenada) {
-        this.coordenada = coordenada;
+    public void setCoordenada(String coordenadadireccion) {
+        this.coordenadadireccion = coordenadadireccion;
     }
 
     public String getDescripcion() {
-        return descripcion;
+        return descripciondireccion;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescripcion(String descripciondireccion) {
+        this.descripciondireccion = descripciondireccion;
     }
 
     public Municipio getMunicipio() {
@@ -92,11 +93,11 @@ public class Direccion {
 
     @Override
     public String toString() {
-        return "Direccion[calle=" + calle +
-                ", carrera=" + carrera +
-                ", coordenada=" + coordenada +
-                ", descripcion=" + descripcion +
-                ", municipio=" + municipio +
+        return "Direccion[calle=" + calledireccion +
+                ", carrera=" + carreradireccion +
+                ", coordenada =" + coordenadadireccion +
+                ", descripcion =" + descripciondireccion +
+                ", municipio =" + municipio +
                 ", departamento=" + departamento +
                 ", pais=" + pais + "]";
     }

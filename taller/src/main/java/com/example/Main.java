@@ -1,13 +1,10 @@
 package com.example;
 
-import dominio.Cargo;
+import controladores.Controlador;
 import dominio.Departamento;
 import dominio.Direccion;
-import dominio.Empleado;
-import dominio.Estudiante;
 import dominio.Municipio;
 import dominio.Pais;
-import dominio.Persona;
 import fabricas.ArchivoRepositorioFabrica;
 import fabricas.CrudRepositorioFabrica;
 import fabricas.SqlRepositorioFabrica;
@@ -17,56 +14,60 @@ import repositorio.DatosRepositorio;
 
 public class Main {
 
+        // Método ajustado para devolver un DatosRepositorio
+        public <T> DatosRepositorio<T> hacerAlgo(int op, ConexionBaseDatos h2BaseDatos, Class<T> clase) {
+                switch (op) {
+                        case 1:
+                                // Fabrica para SQL
+                                CrudRepositorioFabrica fabricaSql = new SqlRepositorioFabrica(h2BaseDatos);
+                                return fabricaSql.crearRepositorio(clase);
+                        case 2:
+                                // Fabrica para archivo
+                                CrudRepositorioFabrica fabricaTxt = new ArchivoRepositorioFabrica();
+                                return fabricaTxt.crearRepositorio(clase);
+                        default:
+                                throw new IllegalArgumentException("Operación no válida: " + op);
+                }
+        }
+
         public static void main(String[] args) {
 
-                // ConexionBaseDatos h2BaseDatos = new Conexion();
+                ConexionBaseDatos h2BaseDatos = new Conexion();
 
-                // Crear la fábrica que utiliza el archivo Hola.txt
-                CrudRepositorioFabrica fabricaTxt = new ArchivoRepositorioFabrica("Hola.txt");
-                // Crear la fábrica que utiliza sql
-                // CrudRepositorioFabrica fabricaSql = new SqlRepositorioFabrica(h2BaseDatos);
+                Pais eeeuu = new Pais(789, "EEUU");
 
-                // Crear el repositorio para la clase Pais
-                DatosRepositorio<Pais> paisRepoTxt = fabricaTxt.crearRepositorio(Pais.class);
-                // DatosRepositorio<Pais> paisRepoSql = fabricaSql.crearRepositorio(Pais.class);
+                Controlador controladorInstancia = new Controlador();
 
-                Pais pais = new Pais(123, "Colombia");
-                // // paisRepoSql.crearObjeto(pais);
-                paisRepoTxt.crearObjeto(pais);
-                System.out.println(paisRepoTxt.leerObjeto(123));
+                DatosRepositorio<Pais> paisRepo = controladorInstancia.hacerAlgo(1, h2BaseDatos, Pais.class);
+                DatosRepositorio<Departamento> departamentoRepo = controladorInstancia.hacerAlgo(1, h2BaseDatos,
+                                Departamento.class);
+                DatosRepositorio<Municipio> municipioRepo = controladorInstancia.hacerAlgo(1, h2BaseDatos,
+                                Municipio.class);
+                DatosRepositorio<Direccion> direccionRepo = controladorInstancia.hacerAlgo(1, h2BaseDatos,
+                                Direccion.class);
 
-                DatosRepositorio<Departamento> departamentoRepoTxt = fabricaTxt.crearRepositorio(Departamento.class);
-                // DatosRepositorio<Departamento> departamentoRepoSql =
-                // fabricaSql.crearRepositorio(Departamento.class);
+                // GUARDANDO EN LA BD
+                paisRepo.crearObjeto(eeeuu);
 
-                Departamento departamento = new Departamento(123, "Meta2", pais);
+                System.out.println("Leyendo PAIS desde la BD: " + paisRepo.leerObjeto(789));
 
-                // departamentoRepoSql.crearObjeto(departamento);
-                departamentoRepoTxt.crearObjeto(departamento);
+                Departamento california = new Departamento(125, "California", eeeuu);
 
-                System.out.println(departamentoRepoTxt.leerObjeto(123));
+                departamentoRepo.crearObjeto(california);
+                System.out.println("Leyendo DEP desde la BD: " + departamentoRepo.leerObjeto(125));
 
-                DatosRepositorio<Municipio> municipioRepoTxt = fabricaTxt.crearRepositorio(Municipio.class);
-                // // // DatosRepositorio<Municipio> municipioRepoSql =
-                // // fabricaSql.crearRepositorio(Municipio.class);
+                Municipio losAngeles = new Municipio(852, "Los angeles", california);
+                municipioRepo.crearObjeto(losAngeles);
 
-                Municipio municipio = new Municipio(1, "Restrepo", departamento);
+                System.out.println("Leyendo MUNI desde la BD: " + municipioRepo.leerObjeto(852));
 
-                // // municipioRepoSql.crearObjeto(municipio);
-                municipioRepoTxt.crearObjeto(municipio);
-                System.out.println(municipioRepoTxt.leerObjeto(1));
+                Direccion direccion = new Direccion(143, "asdasd", "asdasd", "a55dasd",
+                                "sadasdasd", losAngeles,
+                                california, eeeuu);
 
-                DatosRepositorio<Direccion> direccionRepoTxt = fabricaTxt.crearRepositorio(Direccion.class);
-                // // DatosRepositorio<Direccion> direccionRepoSql =
-                // fabricaSql.crearRepositorio(Direccion.class);
+                direccionRepo.crearObjeto(direccion);
 
-                Direccion direccion = new Direccion(1, "Calle 10", "Carrera 45",
-                                "4.5981,-75.5751", "Apartamento 101",
-                                municipio, departamento, pais);
-
-                // // direccionRepoSql.crearObjeto(direccion);
-                direccionRepoTxt.crearObjeto(direccion);
-                System.out.println(direccionRepoTxt.leerObjeto(1));
+                System.out.println("Leyendo DIREC desde la BD: " + direccionRepo.leerObjeto(143));
 
         }
 }

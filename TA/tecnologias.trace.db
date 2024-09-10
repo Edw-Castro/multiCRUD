@@ -2185,3 +2185,1248 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/O
 	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
 	... 15 more
+2024-09-09 21:15:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DEPARTAMENTO" no encontrada
+Column "DEPARTAMENTO" not found; SQL statement:
+INSERT INTO Municipio (idMunicipio, nombreMunicipio, departamento) VALUES ('852', 'Los angeles', '125') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:59)
+2024-09-09 21:15:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID" no encontrada
+Column "ID" not found; SQL statement:
+INSERT INTO Direccion (id, calle, carrera, coordenada, descripcion, municipio, departamento, pais) VALUES ('143', 'asdasd', 'asdasd', 'a55dasd', 'sadasdasd', 'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]', '125', '789') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:63)
+2024-09-09 21:16:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DEPARTAMENTO" no encontrada
+Column "DEPARTAMENTO" not found; SQL statement:
+INSERT INTO Municipio (idMunicipio, nombreMunicipio, departamento) VALUES ('852', 'Los angeles', '125') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:59)
+2024-09-09 21:16:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID" no encontrada
+Column "ID" not found; SQL statement:
+INSERT INTO Direccion (id, calle, carrera, coordenada, descripcion, municipio, departamento, pais) VALUES ('143', 'asdasd', 'asdasd', 'a55dasd', 'sadasdasd', 'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]', '125', '789') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:63)
+2024-09-09 21:18:01 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:39)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:18:01 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:40)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:18:01 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:42)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:18:01 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:44)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:18:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DEPARTAMENTO" no encontrada
+Column "DEPARTAMENTO" not found; SQL statement:
+INSERT INTO Municipio (idMunicipio, nombreMunicipio, departamento) VALUES ('852', 'Los angeles', '125') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:59)
+2024-09-09 21:18:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID" no encontrada
+Column "ID" not found; SQL statement:
+INSERT INTO Direccion (id, calle, carrera, coordenada, descripcion, municipio, departamento, pais) VALUES ('143', 'asdasd', 'asdasd', 'a55dasd', 'sadasdasd', 'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]', '125', '789') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:63)
+2024-09-09 21:22:35 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:41)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:22:35 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:42)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:22:35 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:44)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:22:36 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:46)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:24:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DEPARTAMENTO" no encontrada
+Column "DEPARTAMENTO" not found; SQL statement:
+INSERT INTO Municipio (idMunicipio, nombreMunicipio, departamento) VALUES ('852', 'Los angeles', '125') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:60)
+2024-09-09 21:26:22.699194-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "PERSONA" debido a que "CONSTRAINT_87, CONSTRAINT_75" depende de él.
+Cannot drop "PERSONA" because "CONSTRAINT_87, CONSTRAINT_75" depends on it; SQL statement:
+DROP TABLE PERSONA [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:26:54.814341-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "PERSONA_ID" no encontrada
+Column "PERSONA_ID" not found; SQL statement:
+CREATE TABLE Estudiante (
+    idestudiante INT PRIMARY KEY,
+    codigoestudiante VARCHAR(50) NOT NULL,
+    programaestudiante VARCHAR(255),
+    promedioestudiante DOUBLE,
+    persona INT,
+    FOREIGN KEY (persona_id) REFERENCES Persona(idpersona)
+) [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:184)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:215)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:74)
+	at org.h2.command.ddl.AlterTable.update(AlterTable.java:46)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:83)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:28:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID" no encontrada
+Column "ID" not found; SQL statement:
+INSERT INTO Direccion (id, calle, carrera, coordenada, descripcion, municipio, departamento, pais) VALUES ('143', 'asdasd', 'asdasd', 'a55dasd', 'sadasdasd', 'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]', '125', '789') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:65)
+2024-09-09 21:30:35 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:41)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:30:35 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:42)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:30:35 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:44)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:30:35 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:46)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:30:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "ID" no encontrada
+Column "ID" not found; SQL statement:
+INSERT INTO Direccion (id, calle, carrera, coordenada, descripcion, municipio, departamento, pais) VALUES ('143', 'asdasd', 'asdasd', 'a55dasd', 'sadasdasd', 'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]', '125', '789') [42122-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:759)
+	at org.h2.command.Parser.parseColumn(Parser.java:1300)
+	at org.h2.command.Parser.parseColumnList(Parser.java:1285)
+	at org.h2.command.Parser.parseInsert(Parser.java:1672)
+	at org.h2.command.Parser.parsePrepared(Parser.java:822)
+	at org.h2.command.Parser.parse(Parser.java:697)
+	at org.h2.command.Parser.parse(Parser.java:669)
+	at org.h2.command.Parser.prepareCommand(Parser.java:577)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:634)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:557)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:92)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)
+	at persistencia.funcionesAuxiliares.FuncionesAuxiliares.ejecutarSentenciaSQL(FuncionesAuxiliares.java:120)
+	at persistencia.sql.SqlRepositorio.crearObjeto(SqlRepositorio.java:51)
+	at com.example.Main.main(Main.java:65)
+2024-09-09 21:38:56.816588-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "PERSONA" debido a que "CONSTRAINT_75" depende de él.
+Cannot drop "PERSONA" because "CONSTRAINT_75" depends on it; SQL statement:
+DROP TABLE PERSONA [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:39:00.241212-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "CARGO" debido a que "CONSTRAINT_75C" depende de él.
+Cannot drop "CARGO" because "CONSTRAINT_75C" depends on it; SQL statement:
+DROP TABLE CARGO [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:39:03.729188-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "DIRECCION" debido a que "CONSTRAINT_25B" depende de él.
+Cannot drop "DIRECCION" because "CONSTRAINT_25B" depends on it; SQL statement:
+DROP TABLE DIRECCION [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:39:16.607888-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "DIRECCION" debido a que "CONSTRAINT_25B" depende de él.
+Cannot drop "DIRECCION" because "CONSTRAINT_25B" depends on it; SQL statement:
+DROP TABLE DIRECCION [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:39:27.564505-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "PAIS" debido a que "CONSTRAINT_6CB0, CONSTRAINT_3E" depende de él.
+Cannot drop "PAIS" because "CONSTRAINT_6CB0, CONSTRAINT_3E" depends on it; SQL statement:
+DROP TABLE PAIS [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:39:37.086676-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Imposible eliminar "DEPARTAMENTO" debido a que "CONSTRAINT_B4" depende de él.
+Cannot drop "DEPARTAMENTO" because "CONSTRAINT_B4" depends on it; SQL statement:
+DROP TABLE DEPARTAMENTO [90107-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:644)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:108)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:133)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:42:51 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:41)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:42:51 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:42)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:42:51 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:44)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:42:51 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:46)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAIS" not found (this database is empty); SQL statement:
+INSERT INTO Pais (idPais, nombrePais) VALUES ('789', 'EEUU') [42104-220]
+2024-09-09 21:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PAIS" not found (this database is empty); SQL statement:
+SELECT * FROM Pais WHERE idPais = ? [42104-220]
+2024-09-09 21:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPARTAMENTO" not found (this database is empty); SQL statement:
+INSERT INTO Departamento (idDepartamento, nombreDepartamento, pais) VALUES ('125', 'California', '789') [42104-220]
+2024-09-09 21:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DEPARTAMENTO" not found (this database is empty); SQL statement:
+SELECT * FROM Departamento WHERE idDepartamento = ? [42104-220]
+2024-09-09 21:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MUNICIPIO" not found (this database is empty); SQL statement:
+INSERT INTO Municipio (idMunicipio, nombreMunicipio, departamento) VALUES ('852', 'Los angeles', '125') [42104-220]
+2024-09-09 21:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "MUNICIPIO" not found (this database is empty); SQL statement:
+SELECT * FROM Municipio WHERE idMunicipio = ? [42104-220]
+2024-09-09 21:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DIRECCION" not found (this database is empty); SQL statement:
+INSERT INTO Direccion (iddireccion, calledireccion, carreradireccion, coordenadadireccion, descripciondireccion, municipio, departamento, pais) VALUES ('143', 'asdasd', 'asdasd', 'a55dasd', 'sadasdasd', 'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]', '125', '789') [42104-220]
+2024-09-09 21:43:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DIRECCION" not found (this database is empty); SQL statement:
+SELECT * FROM Direccion WHERE idDireccion = ? [42104-220]
+2024-09-09 21:43:56.458804-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Columna "DEPARTAMENTO_ID" no encontrada
+Column "DEPARTAMENTO_ID" not found; SQL statement:
+CREATE TABLE Municipio (
+    idmunicipio INT PRIMARY KEY,
+    nombremunicipio VARCHAR(255) NOT NULL,
+    departamento INT,
+    FOREIGN KEY (departamento_id) REFERENCES Departamento(iddepartamento)
+) [42122-232]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:786)
+	at org.h2.table.IndexColumn.mapColumns(IndexColumn.java:184)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:215)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:74)
+	at org.h2.command.ddl.AlterTable.update(AlterTable.java:46)
+	at org.h2.command.ddl.CommandWithColumns.createConstraints(CommandWithColumns.java:83)
+	at org.h2.command.ddl.CreateTable.update(CreateTable.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:139)
+	at org.h2.command.Command.executeUpdate(Command.java:304)
+	at org.h2.command.Command.executeUpdate(Command.java:248)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:262)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:231)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1344)
+	at org.h2.server.web.WebApp.query(WebApp.java:1142)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1108)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1095)
+	at org.h2.server.web.WebThread.process(WebThread.java:190)
+	at org.h2.server.web.WebThread.run(WebThread.java:103)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2024-09-09 21:43:56.467345-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "MUNICIPIO" no encontrada
+Table "MUNICIPIO" not found; SQL statement:
+CREATE TABLE Direccion (
+    iddireccion INT PRIMARY KEY AUTO_INCREMENT,
+    municipio INT,
+    departamento INT,
+    pais INT,
+    calledireccion VARCHAR(255),
+    carreradireccion VARCHAR(255),
+    coordenadadireccion VARCHAR(255),
+    descripciondireccion VARCHAR(255),
+    FOREIGN KEY (municipio) REFERENCES Municipio(idmunicipio),
+    FOREIGN KEY (departamento) REFERENCES Departamento(iddepartamento),
+    FOREIGN KEY (pais) REFERENCES Pais(idpais)
+) [42102-232]
+2024-09-09 21:43:56.472868-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "DIRECCION" no encontrada
+Table "DIRECCION" not found; SQL statement:
+CREATE TABLE Persona (
+    idpersona INT PRIMARY KEY,
+    nombrepersona VARCHAR(255) NOT NULL,
+    apellidopersona VARCHAR(255) NOT NULL,
+    direccion INT,
+    FOREIGN KEY (direccion) REFERENCES Direccion(iddireccion)
+) [42102-232]
+2024-09-09 21:43:56.476054-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PERSONA" no encontrada
+Table "PERSONA" not found; SQL statement:
+CREATE TABLE Estudiante (
+    idestudiante INT PRIMARY KEY,
+    codigoestudiante VARCHAR(50) NOT NULL,
+    programaestudiante VARCHAR(255),
+    promedioestudiante DOUBLE,
+    persona INT,
+    FOREIGN KEY (persona) REFERENCES Persona(idpersona)
+) [42102-232]
+2024-09-09 21:43:56.481995-05:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "PERSONA" no encontrada
+Table "PERSONA" not found; SQL statement:
+CREATE TABLE Empleado (
+    idempleado INT PRIMARY KEY,
+    cargo INT,
+    persona INT,
+    salarioempleado DOUBLE,
+    FOREIGN KEY (persona) REFERENCES Persona(idpersona),
+    FOREIGN KEY (cargo) REFERENCES Cargo(idcargo)
+) [42102-232]
+2024-09-09 21:45:03 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:41)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:45:03 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:42)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:45:03 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:44)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:45:03 database: flush
+org.h2.message.DbException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:407)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:122)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:1547)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:371)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:291)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2036)
+	at org.h2.mvstore.db.Store.<init>(Store.java:133)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:683)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:230)
+	at infraestructura.baseDeDatos.Conexion.obtenerBaseDatos(Conexion.java:19)
+	at persistencia.sql.SqlRepositorio.<init>(SqlRepositorio.java:23)
+	at fabricas.SqlRepositorioFabrica.crearRepositorio(SqlRepositorioFabrica.java:16)
+	at controladores.Controlador.hacerAlgo(Controlador.java:15)
+	at com.example.Main.main(Main.java:46)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Error General : "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]" [50000-220]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:566)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/edwca/OneDrive/Documentos/Java/TA/TA/tecnologias.mv.db [2.2.220/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:996)
+	at org.h2.mvstore.SingleFileStore.lockFileChannel(SingleFileStore.java:143)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:117)
+	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
+	... 16 more
+2024-09-09 21:45:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Conversión de datos fallida, convirtiendo "'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]' (DIRECCION: ""MUNICIPIO"" INTEGER)"
+Data conversion error converting "'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]' (DIRECCION: ""MUNICIPIO"" INTEGER)"; SQL statement:
+INSERT INTO Direccion (iddireccion, calledireccion, carreradireccion, coordenadadireccion, descripciondireccion, municipio, departamento, pais) VALUES ('143', 'asdasd', 'asdasd', 'a55dasd', 'sadasdasd', 'Municipio[idMunicipio=852, nombreMunicipio=Los angeles, departamento=Departamento[idDepartamento=125, nombreDepartamento=California, pais=Pais[idPais=789, nombrePais=EEUU]]]', '125', '789') [22018-220]

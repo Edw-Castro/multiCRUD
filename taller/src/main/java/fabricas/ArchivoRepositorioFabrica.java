@@ -4,14 +4,10 @@ import persistencia.archivos.ArchivoRepositorio;
 import repositorio.DatosRepositorio;
 
 public class ArchivoRepositorioFabrica implements CrudRepositorioFabrica {
-    private String archivo;
-
-    public ArchivoRepositorioFabrica(String archivo) {
-        this.archivo = archivo;
-    }
 
     @Override
-    public <T> DatosRepositorio<T> crearRepositorio(Class<T> tipoEntidad) {
-        return new ArchivoRepositorio<>(tipoEntidad, archivo);
+    public <T> DatosRepositorio<T> crearRepositorio(Class<T> clase) {
+        String nombreArchivo = clase.getSimpleName() + ".txt";
+        return new ArchivoRepositorio<>(clase, nombreArchivo);
     }
 }
