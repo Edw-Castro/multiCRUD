@@ -15,7 +15,7 @@ public class Municipio {
     }
 
     // Getters y Setters
-    public int getIdMunicipio() {
+    public int getId() {
         return idMunicipio;
     }
 

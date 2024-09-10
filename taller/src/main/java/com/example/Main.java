@@ -38,12 +38,12 @@ public class Main {
 
                 Controlador controladorInstancia = new Controlador();
 
-                DatosRepositorio<Pais> paisRepo = controladorInstancia.hacerAlgo(1, h2BaseDatos, Pais.class);
-                DatosRepositorio<Departamento> departamentoRepo = controladorInstancia.hacerAlgo(1, h2BaseDatos,
+                DatosRepositorio<Pais> paisRepo = controladorInstancia.hacerAlgo(2, h2BaseDatos, Pais.class);
+                DatosRepositorio<Departamento> departamentoRepo = controladorInstancia.hacerAlgo(2, h2BaseDatos,
                                 Departamento.class);
-                DatosRepositorio<Municipio> municipioRepo = controladorInstancia.hacerAlgo(1, h2BaseDatos,
+                DatosRepositorio<Municipio> municipioRepo = controladorInstancia.hacerAlgo(2, h2BaseDatos,
                                 Municipio.class);
-                DatosRepositorio<Direccion> direccionRepo = controladorInstancia.hacerAlgo(1, h2BaseDatos,
+                DatosRepositorio<Direccion> direccionRepo = controladorInstancia.hacerAlgo(2, h2BaseDatos,
                                 Direccion.class);
 
                 // GUARDANDO EN LA BD
