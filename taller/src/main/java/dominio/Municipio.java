@@ -1,6 +1,8 @@
 package dominio;
 
-public class Municipio {
+import java.io.Serializable;
+
+public class Municipio implements Serializable {
     private int idMunicipio;
     private String nombreMunicipio;
     private Departamento departamento;

@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.lang.reflect.Field;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+
 import java.sql.Connection;
 
 public class FuncionesAuxiliares {
@@ -127,6 +128,24 @@ public class FuncionesAuxiliares {
 
     public static boolean esObjetoComplejo(Field campo) {
         return !campo.getType().isPrimitive() && !campo.getType().equals(String.class);
+    }
+
+    public Object filtrarPorId(int filtroId, Object objetoFiltrado) {
+        try {
+            int id = (int) objetoFiltrado.getClass().getMethod("getId").invoke(objetoFiltrado);
+            if (id == filtroId) {
+                // Si coincide, retornar el objeto
+                System.out.println("Objeto encontrado: " + objetoFiltrado);
+                return objetoFiltrado;
+            }
+        } catch (IllegalAccessException | NoSuchMethodException | SecurityException
+                | java.lang.reflect.InvocationTargetException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
+        return null;
+
     }
 
 }

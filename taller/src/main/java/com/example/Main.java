@@ -3,8 +3,10 @@ package com.example;
 import controladores.Controlador;
 import dominio.Departamento;
 import dominio.Direccion;
+import dominio.Estudiante;
 import dominio.Municipio;
 import dominio.Pais;
+import dominio.Persona;
 import fabricas.ArchivoRepositorioFabrica;
 import fabricas.CrudRepositorioFabrica;
 import fabricas.SqlRepositorioFabrica;
@@ -47,27 +49,34 @@ public class Main {
                                 Direccion.class);
 
                 // GUARDANDO EN LA BD
-                paisRepo.crearObjeto(eeeuu);
+                // paisRepo.crearObjeto(eeeuu);
 
-                System.out.println("Leyendo PAIS desde la BD: " + paisRepo.leerObjeto(789));
+                System.out.println("LEYENDO PAÍS es: " + paisRepo.leerObjeto(789));
 
                 Departamento california = new Departamento(125, "California", eeeuu);
 
-                departamentoRepo.crearObjeto(california);
-                System.out.println("Leyendo DEP desde la BD: " + departamentoRepo.leerObjeto(125));
+                // departamentoRepo.crearObjeto(california);
 
                 Municipio losAngeles = new Municipio(852, "Los angeles", california);
-                municipioRepo.crearObjeto(losAngeles);
-
-                System.out.println("Leyendo MUNI desde la BD: " + municipioRepo.leerObjeto(852));
+                // municipioRepo.crearObjeto(losAngeles);
 
                 Direccion direccion = new Direccion(143, "asdasd", "asdasd", "a55dasd",
                                 "sadasdasd", losAngeles,
                                 california, eeeuu);
 
-                direccionRepo.crearObjeto(direccion);
+                // direccionRepo.crearObjeto(direccion);
 
-                System.out.println("Leyendo DIREC desde la BD: " + direccionRepo.leerObjeto(143));
+                DatosRepositorio<Estudiante> estudianteRepo = controladorInstancia.hacerAlgo(2, h2BaseDatos,
+                                Estudiante.class);
+
+                DatosRepositorio<Persona> personaRepo = controladorInstancia.hacerAlgo(2, h2BaseDatos, Persona.class);
+                Persona edwPersona = new Persona(123, "Edward", "Castro", direccion);
+                // personaRepo.crearObjeto(edwPersona);
+
+                Estudiante edward = new Estudiante(123, "Edward", "Castro", direccion, "160004625", "Ing. Sistemas",
+                                40.55);
+                // estudianteRepo.crearObjeto(edward);
+                System.out.println("LEYENDO ESTUDIANTE es: " + estudianteRepo.leerObjeto(123));
 
         }
 }

@@ -1,6 +1,8 @@
 package dominio;
 
-public class Cargo implements Todos {
+import java.io.Serializable;
+
+public class Cargo implements Todos, Serializable {
     private int id;
     private String nombre;
 

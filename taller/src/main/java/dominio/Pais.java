@@ -1,6 +1,8 @@
 package dominio;
 
-public class Pais {
+import java.io.Serializable;
+
+public class Pais implements Serializable {
     private int idPais;
     private String nombrePais;
 

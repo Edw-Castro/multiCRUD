@@ -5,7 +5,8 @@ public class Estudiante extends Persona {
     private String programa;
     private Double promedio;
 
-    Estudiante() {
+    public Estudiante() {
+        super();
     }
 
     public Estudiante(int id, String nombres, String apellidos, Direccion direccion, String codigo, String programa,
@@ -16,13 +17,12 @@ public class Estudiante extends Persona {
         this.promedio = promedio;
     }
 
-    @Override
-    public String toString() {
-        return super.toString() + ", codigo=" + codigo + ", programa=" + programa + ", promedio=" + promedio + "]";
-    }
-
     public String getCodigo() {
         return codigo;
+    }
+
+    public int getId() {
+        return super.getId();
     }
 
     public String getPrograma() {
@@ -31,5 +31,13 @@ public class Estudiante extends Persona {
 
     public Double getPromedio() {
         return promedio;
+    }
+
+    @Override
+    public String toString() {
+        return "Estudiante { Esto viene de persona = " + super.toString() + " codigo: " + codigo + " programa: "
+                + programa
+                + " promedio: "
+                + promedio + "}  ";
     }
 }

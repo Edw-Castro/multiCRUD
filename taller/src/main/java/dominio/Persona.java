@@ -1,6 +1,8 @@
 package dominio;
 
-public class Persona implements Todos {
+import java.io.Serializable;
+
+public class Persona implements Todos, Serializable {
     private int id;
     private String nombre;
     private String apellido;

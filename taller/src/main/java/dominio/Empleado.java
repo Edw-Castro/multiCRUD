@@ -1,8 +1,6 @@
 package dominio;
 
-import java.io.Serializable;
-
-public class Empleado extends Persona implements Serializable {
+public class Empleado extends Persona {
     private Cargo cargo;
     private double salario;
 
@@ -27,6 +25,11 @@ public class Empleado extends Persona implements Serializable {
 
     public double getSalario() {
         return salario;
+    }
+
+    @Override
+    public int getId() {
+        return super.getId();
     }
 
     public void setSalario(double salario) {

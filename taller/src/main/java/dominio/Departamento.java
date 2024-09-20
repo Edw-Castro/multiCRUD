@@ -1,6 +1,8 @@
 package dominio;
 
-public class Departamento {
+import java.io.Serializable;
+
+public class Departamento implements Serializable {
     private int idDepartamento;
     private String nombreDepartamento;
     private Pais pais;

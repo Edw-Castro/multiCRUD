@@ -1,6 +1,8 @@
 package dominio;
 
-public class Direccion {
+import java.io.Serializable;
+
+public class Direccion implements Serializable {
     private int iddireccion;
     private String calledireccion;
     private String carreradireccion;
